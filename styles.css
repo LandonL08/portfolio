@@ -1,0 +1,239 @@
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+.who,
+.skills-screen,
+.projects-screen,
+.contact-screen
+ {
+    display: none;
+    color: white;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #160F29;
+ 
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.name{
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.name a:hover{
+    transition: .5s;
+    
+}
+
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: right;
+    padding: 20px;
+    
+}
+
+.navbar a:hover{
+    text-decoration: #368F8B underline;
+    transition: .5s;
+}
+
+.welcome,
+.who {
+    color: white;
+}
+
+
+.welcome{
+ text-align: center;
+ top: 200px;
+ position: fixed;
+ font-size: 40px;
+ margin-left: 20px;
+ margin-right: 20px; 
+ 
+}
+
+
+
+/* who text and photo */
+
+.who-head{
+     position: flex-start;
+    text-align: center;
+    line-height: 8;
+}
+
+
+
+.who-para{
+    top: 200px;
+    left: 350px;
+    position: fixed;
+    width: 50%;
+    font-size: 18px;
+    font-family: "Libre Baskerville", serif;
+}
+
+
+.who-photo{
+    position: fixed;
+    top: 150px;
+    left: 125px;
+}
+
+/* SKILLS SCREEN  */
+.soft-skills{
+    position: fixed;
+    top: 150px;
+    left: 250px;
+}
+
+.hard-skills{
+    position: fixed;
+    top: 150px; 
+    right: 250px; 
+}
+
+.skills-1{
+    top: 200px;
+    left: 250px;
+    position: fixed; 
+}
+
+.skills-2{
+    top: 200px;
+    right: 375px;
+    position: fixed;
+}
+/* Projects Screen */
+
+.projects-screen{
+    width: 100%;
+    display: flex
+}
+
+.project-heading{
+    text-align: center;
+    line-height: 8;
+}
+
+
+.project-images{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 65% 65% 65%;
+    position: flex;
+    width: auto;
+    height: auto;
+}
+
+
+
+.project-titles{
+    display: grid;
+    grid-template-columns: 65% 65% 65%;
+
+}
+.criminal-text{
+    width: 40%;
+    height: auto;
+    color: transparent;
+    -webkit-text-stroke: 0.5px yellow;
+    text-decoration: underline grey;
+    position: relative;
+
+
+}
+.criminal-text:before{
+    content: "A choose your own adventure game, in which you're a criminal in Gotham City! This is my favorite project I made during the Nextech Catapult Program in 2024, and the one I am most proud of.";
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: yellow;
+    position: absolute;
+    transition: .5s ease;
+    text-decoration: underline whitesmoke;
+}
+
+.criminal-text:hover:before{
+    width: 100%;
+    filter: drop-shadow (0 0 25px white)
+}
+ 
+/* CONTACT SCREEN */
+.contact-screen{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    color: red;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: green;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+
+}
